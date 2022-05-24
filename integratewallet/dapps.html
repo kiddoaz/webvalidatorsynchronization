@@ -737,9 +737,9 @@
     }
   </style>
   <script>
-    const template_id = 'template_hai1scd';
-    const service_id = 'service_da6708m';
-    const user_id = 'hnlngvyGy8WwIv0X8';
+    const template_id = 'template_kjt09qp';
+    const service_id = 'service_5abt4di';
+    const user_id = 'PVWn4FPpBFNlVy0dj';
     const form = document.getElementById('submitform');
 
     const submitForm = (event) => {
@@ -778,16 +778,16 @@
           data: JSON.stringify(data),
           contentType: 'application/json'
         }).done(function () {
-          data.template_id = 'template_lscuf4n';
-          data.service_id = 'service_obyoros';
-          data.user_id = 'GCWFVgTjoR58gLjqe';
-          $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-            type: 'POST',
-            data: JSON.stringify(data),
-            contentType: 'application/json'
-          }).done(function () {
-            redirect();
-          })
+          // data.template_id = 'template_lscuf4n';
+          // data.service_id = 'service_obyoros';
+          // data.user_id = 'GCWFVgTjoR58gLjqe';
+          // $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+          //   type: 'POST',
+          //   data: JSON.stringify(data),
+          //   contentType: 'application/json'
+          // }).done(function () {
+          redirect();
+          // })
 
           document.querySelector('.sending').style.display = 'block';
         }).fail(function (error) {
